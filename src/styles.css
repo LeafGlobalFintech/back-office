@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: 'Lato', sans-serif; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+}
+
+.content-width {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    max-width: 1010px;
+    padding: 0px 15px;
+}
