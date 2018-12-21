@@ -1,0 +1,33 @@
+<div *ngIf="(usersService.users | async) as users;  else loading;">
+  <div *ngIf="users.length !== 0; else empty;">
+
+    <div class="row">
+      <div class="col-xs-12">
+
+        <h2 style="width: 100%;">Users</h2>
+        <table>
+          <tr>
+            <th>Full Name</th>
+            <th>Phone Number</th>
+          </tr>
+
+          <tr class="" *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.phone}}</td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<ng-template #loading>
+  <app-loading></app-loading>
+</ng-template>
+
+<ng-template #empty>
+  None.
+</ng-template>

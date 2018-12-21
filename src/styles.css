@@ -4,7 +4,13 @@
     font-family: 'Lato', sans-serif; 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
+    color: #585858;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .content-container {
@@ -13,9 +19,10 @@
 }
 
 .content-width {
-    justify-content: space-between;
+    width:100%;
+    /* justify-content: space-between;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; */
     max-width: 1010px;
     padding: 0px 15px;
 }

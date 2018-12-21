@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { ShellComponent } from './shell/shell.component';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
+import { UsersComponent } from './users/users.component';
 
 
 export const routes: Routes = [
   {
     path: '', component: ShellComponent, children: [
-      { path: '', component: HomeComponent },
+      { path: '', redirectTo: 'users',  pathMatch: 'full' },
+      { path: 'users', component: UsersComponent },
     ]
   },
 ];

@@ -1,0 +1,24 @@
+:host(app-feed) { 
+  width: 100%; 
+}
+
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;  
+}
+
+th {
+    text-align: left;
+    background-color: #888888 !important;
+    color: white;
+}
+
+tr>*{
+    padding: 10px 20px;
+}
+
+tr:nth-child(odd) {
+    background-color: #eeeeee;
+}

@@ -1,0 +1,20 @@
+.loading {
+    /* margin: 15vh 45vw; */
+    /* margin-top: 30vh; */
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+    color: #585858;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.loading>i {
+    font-size: 1.3em;
+    color: #8EC056;
+    margin-bottom: .5rem;
+}
